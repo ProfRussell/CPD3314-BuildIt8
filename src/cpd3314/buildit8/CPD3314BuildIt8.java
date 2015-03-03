@@ -1,5 +1,6 @@
 /*
  * Copyright 2014 Len Payne <len.payne@lambtoncollege.ca>.
+ * Updated 2015 Mark Russell <mark.russell@lambtoncollege.ca>.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -124,6 +125,7 @@ public class CPD3314BuildIt8 {
      * @param array - The original array
      * @return - An array with the original values squared
      */
+    
     public static int[] getSquared(int[] array) {
         int[] newArray = array.clone();
         for (int i = 0; i < newArray.length; i++) {
@@ -132,6 +134,14 @@ public class CPD3314BuildIt8 {
         return newArray;
     }
 
+    /**
+     * Build a conversion table. First column is Celsius temperatures (0-20)
+     * second column is Fahrenheit temperatures (32-68)
+     *
+     * Conversion formula is: F = (9/5) * C + 32
+     *
+     */
+    
     public static void doExercise6() {
         double[][] cToF = new double[2][21];
         final int CELSIUS = 0;
